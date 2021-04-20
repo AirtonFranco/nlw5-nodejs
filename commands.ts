@@ -20,5 +20,9 @@
  * 
  * Instalando o TypeORM
  * yarn add typeorm reflect-metadata sqlite3 => instalando o sqlite3 via typeorm
- * 
+ * yarn typeorm migration:create -n CreateSettings => criando a migration (CreateSettings é o nome)
+ * yarn typeorm migration:run => execultando as migrations
+ * yarn typeorm migration:revert => reverter as tabelas criadas
+ * yarn add uuid => adicionando a lib para o uuid (universal unique ID)
+ * yarn add @types/uuid -D => lib uuid em modo dev
  */
