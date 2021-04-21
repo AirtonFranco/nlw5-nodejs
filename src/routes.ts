@@ -1,6 +1,23 @@
 import { Router } from "express";
-import { settings } from "node:cluster";
+import { MessagesController } from "./controllers/MessagesController";
 import { SettingsController } from "./controllers/SettingsController";
+import { UsersController } from "./controllers/UsersController";
+
+const routes = Router();
+
+const settingsController = new SettingsController();
+const usersController = new UsersController();
+const messagesController = new MessagesController();
+
+
+routes.post("/settings", settingsController.create);
+
+routes.post("/users", usersController.create);
+
+routes.post("/messages", messagesController.create);
+routes.get("/messages/:id", messagesController.showByUser);
+export { routes };
+
 
 //Tipos de Parametros
 /**
@@ -15,11 +32,3 @@ import { SettingsController } from "./controllers/SettingsController";
  *  vem dentro de um objeto
  * }
  */
-
-const routes = Router();
-
-const settingsController = new SettingsController();
-
-routes.post("/settings", settingsController.create)
-
-export { routes };

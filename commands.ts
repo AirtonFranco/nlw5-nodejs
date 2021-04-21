@@ -26,3 +26,12 @@
  * yarn add uuid => adicionando a lib para o uuid (universal unique ID)
  * yarn add @types/uuid -D => lib uuid em modo dev
  */
+
+//Fluxo
+/**
+ * Migrations: Criar a Migration
+ * entities: criar a entidades
+ * repositories: criar a repository
+ * services: criar a service
+ * controller: criar a controller
+ */
