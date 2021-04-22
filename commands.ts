@@ -35,3 +35,11 @@
  * services: criar a service
  * controller: criar a controller
  */
+
+/**
+ * Aula - 5
+ * yarn add socket.io => instalando o socket.io
+ * yarn add @types/socket.io => instalando as tipagens so socket.io para o typescript
+ * yarn add ejs
+ * yarn add socket.io-client => intalando o modulo clint do socket no front da aplicação
+ */
