@@ -37,9 +37,20 @@
  */
 
 /**
- * Aula - 5
+ * Aula - 4
  * yarn add socket.io => instalando o socket.io
  * yarn add @types/socket.io => instalando as tipagens so socket.io para o typescript
  * yarn add ejs
  * yarn add socket.io-client => intalando o modulo clint do socket no front da aplicação
+ */
+
+//ARQUITETURA POR CAMADAS - HEXAGONAL
+//FUNÇÕES DE CADA CAMADA
+/**
+ * entity => representação da entidade, tabela do banco de dados dentro da aplicação
+ * repository => responsavel pelas operações com o banco de dados
+ * services => responsavel por toda a regra de negocios
+ * controller => responsavel por gerenciar as requisições e respostas do fluxo
+ * 
+ * VIDEO EXPLICATIVO: https://www.youtube.com/watch?v=kYx1QC1XZSo
  */
